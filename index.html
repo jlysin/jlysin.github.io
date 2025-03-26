@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+    <title>Allyson Thammavongsa</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+
+<body>
+
+<header>
+    <h1>Allyson Thammavongsa</h1>
+    <nav>
+        <a href="#">Home</a> <!--anchor to top of page-->
+        <a href="#aboutMe">About Me</a> 
+        <a href="#projectShowcase">Project Showcase</a> 
+        <a href="#contactInfo">Contact Information</a>
+    </nav>
+
+</header>
+<main>
+    <!--home section-->
+    <section id="home">
+        <p>I am a senior at UAB majoring in computer science and neuroscience with a minor in chemistry.</p>
+    </section>
+
+    <section id="aboutMe">
+    
+        <h2>About Me</h2>
+        <div class="picture">
+            <img src="IMG_9351.jpg" alt="My dogs, Hazel and Ranger" style="width: 300px;">
+            <div class="text">
+                <h3>Academics</h3>
+                <ul>
+                    <li>UAB senior graduating in Spring 2025</li>
+                    <li>Degree in neuroscience and computer science on the pre-med track</li>
+                    <li>Research in a neuroscience lab analyzing stress in mice</li>
+                </ul>
+                <h3>Hobbies</h3>
+                <ul>
+                    <li>Weightlifting</li>
+                    <li>Playing soccer</li>
+                    <li>Cooking and baking</li>
+                </ul>
+            </div>
+        </div>
+    </section>
+
+    <!--project showcase section-->
+    <section id="projectShowcase">
+        <h2>Project Showcase</h2>
+        <h4>Project links and descriptions</h4>
+        <div class="projectGrid">
+            <div class="projectItem">
+            <p>GUI House in JAVA -- <a href="https://github.com/jlysin/Lab04.git">GitHub repository</a></p>
+            <p>GUI House in JAVA using Object Oriented Programming</p>
+                </div>
+            <div class="projectItem">
+            <p>GUI Calculator -- <a href="https://github.com/jlysin/Lab_10.git">GitHub repository</a></p>
+            <p>GUI Calculator using JAVA OOP-- takes user input and adds, subtracts, multiplies, or divides</p>
+        </div>
+            <div class="projectItem">
+                <p>Insert Project</p>
+                <p>This is a project</p>
+            </div>
+    </div>
+    </section>
+
+    <section id="contactInfo">
+        <h2>Contact Information</h2>
+        <h4>Contact Me:</h4>
+        
+            
+           <form action="mailto:ajthamma@uab.edu" method="get" enctype="text/plain">
+            <label for="subject">Subject:</label>
+            <input type="text" id="subject" name="subject" placeholder="Subject" required><br>
+
+            <label for="email">Email:</label>
+            <input type="email" id="email" placeholder="Your email" required><br>
+
+
+            <label for="body">Message:</label><br>
+            <textarea id="body" name="body" placeholder="Your Message" required></textarea><br>
+
+            <input type="submit" value="Send">
+        
+    </section>
+    <footer><p><br>Copyright ©2025 Allyson Thammavongsa <br>
+        <a href="mailto:ajthamma@uab.edu">email@uab.edu</a></p></footer>
+</main>
+
+</body>

@@ -1,0 +1,175 @@
+html{
+    scroll-behavior:smooth;
+}
+body{
+    font-family: Georgia, serif;
+    background-color: #CFDEE7;
+}
+
+/* specify header details*/
+header{
+    display:flex;
+
+    padding-top: 5px;
+    padding-bottom:5px;
+    text-align: center;
+    align-items: center;
+    color:aliceblue;
+    background-color: #54494B;
+    position:sticky; /*fix the header and nav bar to the top*/
+    top:0;
+    z-index: 1000; /*ensure the header stays over other elements */
+    flex-direction: column; /*stack items*/
+}
+h1{
+   color:aliceblue
+}
+
+/*style nav bar*/
+nav{
+    display:flex;
+    gap:10px;
+    justify-content: center;
+    padding: 10px 0; /*spacing pattern */
+}
+/*adjust navigation bar links*/
+nav a { 
+font-weight: bold;
+color: #5E7CE2;
+padding: 10px;
+}
+
+
+nav a:visited{
+    color: #D8BFAA;
+}
+
+nav a:hover{
+    color: #CFDEE7;
+}
+
+section{
+    scroll-margin-top:150px;
+}
+/*format the about me section*/
+#aboutMe{
+    
+    clear:both;
+    display: flex; /* use flex to align items*/
+    flex-wrap: wrap;
+    justify-content: flex-start;
+    align-items: center;
+    flex-direction: column;
+    width: 100%;
+}
+/* left align the photo*/
+.picture img{
+    width: 100px;
+    height:auto;
+    margin-right: 30px;
+    }
+
+
+/* adjust section links */
+section a{
+color: rgb(128, 83, 186)
+}
+section a:hover{
+    color: #240322;
+}
+#projectShowcase{
+    padding: 50px;
+    align-items: center;
+    text-align: center;
+}
+.projectGrid{
+    display:grid;
+    grid-template-columns: 1fr;
+    gap:15px;
+    justify-content: center;
+    align-items:center;
+    text-align:center;
+    padding:10px;
+   
+}
+
+.projectItem{
+    background-color: #f1c7de;
+    padding: 15px;
+    border: 2px solid #b41c70;
+    border-radius: 10px;
+
+}
+
+.projectItem:hover{
+    background-color:#a60fc1;
+    transition: transform 0.2s ease; /*transition when hovering */
+    transform: scale(1.05);
+    transform-origin: top center;
+    
+}
+#contactInfo{
+    padding: 50px;
+    align-items: center;
+    text-align: center;
+}
+form{
+
+    width: 100%;
+    display:flex;
+    flex-direction: column;
+    align-items: center;
+}
+/*styling for the form*/
+form input, form textarea {
+    align-items: center;
+    padding:5px;
+    border:2px solid #b41c70;
+    background-color: #f1c7de;
+    
+}
+
+input[type="submit"]:hover{
+    background-color: #a60fc1;
+}
+/*adjust the footer */
+footer{
+    text-align: center;
+    background-color: #54494B;
+    color:aliceblue;
+    padding-bottom: 5px;
+  
+}
+
+/*change footer links*/
+footer a{
+    color: #5E7CE2;
+    text-decoration:none;
+}
+
+
+footer a:visited{
+
+    color: #D8BFAA;
+}
+
+footer a:hover{
+    color: #CFDEE7;
+}
+
+/*Responsive design for phones, tablets, laptops*/
+@media screen and (max-width:480px){
+    .projectGrid{
+        grid-template-columns:1fr;
+    }
+}
+@media screen and (min-width: 481px) and (max-width: 768px){
+    .projectGrid{
+        grid-template-columns: repeat(2, 1fr);
+    }
+}
+@media screen and (min-width:769px){
+    .projectGrid{
+        grid-template-columns: repeat(3, 1fr); /*i do not currently  have 3 rojects but this is for when i implement more grid cells */
+    }
+}
